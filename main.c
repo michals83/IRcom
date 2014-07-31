@@ -1,13 +1,16 @@
-# include <stdio.h>
+#include <stdio.h>
 
-   int main() {
-      int a = 3;
-      float b = 4.5;
-      double c = 5.25;
-      double sum;
-    
-      sum = a + b + c;
-      
-      printf("The sum of a, b, and c is %f.", sum);
-      return 0;
-   }
+int main() {
+ int n = 10;
+ 
+ int * pointer_to_n = &n;
+ 
+ *pointer_to_n += 1;
+ 
+ /* testing code */
+ if (pointer_to_n != &n) return 1;
+ if (*pointer_to_n != 11) return 1;
+ 
+ printf("Done!\n");
+ return 0;
+}
