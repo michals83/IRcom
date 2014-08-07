@@ -16,6 +16,7 @@ git commit -m "the changes you made"
 
 git push
 -right after git commit, pushes your changes to the GitHub cloud
+**If you are using Windows, make sure you type "master" after the command** 
 
 git pull
 -when in the directory in terminal, it will update all with the latest changes in the GitHub cloud. Use this when other people have made changes ahead of you
